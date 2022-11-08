@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio's profile</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Principal.css">
+    <script src='main.js'></script>
+    <style>
+        * {
+            font-family: "Verdana", cursive;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+        }
+
+        html {
+            padding: 5rem;
+            background-color: #e7dfdd;
+            color: #EFEFEF;
+        }
+
+        .conteudo {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            gap: 4rem;
+        }
+
+
+        .menu__geral {
+            flex: 1 0;
+            text-align: center;
+            position: relative;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            letter-spacing: 1.4px;
+            font-size: 0.88rem;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 8px 5px 9px 5px;
+            transition: all .5s ease;
+            position: relative;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+
+
+        }
+
+        a:hover {
+            transition: all .5s ease;
+            color: rgb(61, 190, 223);
+        }
+
+        a:before {
+            background-image: url("./like.png");
+            background-size: 100%;
+            height: 40px;
+            width: 40px;
+            top: -35px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            opacity: .8;
+        }
+
+        a:hover::before {
+            position: absolute;
+            content: '';
+            animation: imagemLampadinha .3s ease-in-out;
+        }
+
+        @keyframes imagemLampadinha {
+            0% {
+                opacity: 0;
+                height: 3px;
+                width: 3px;
+                top: 30px;
+            }
+
+            100% {
+                opacity: .8;
+                height: 29px;
+                width: 40px;
+                top: -25px;
+            }
+
+        }
+
+        a::after {
+            position: absolute;
+            content: '';
+            left: 4px;
+            bottom: 7px;
+            height: 1px;
+            width: 0;
+            padding: 0;
+            z-index: -1;
+            transition: all .5s ease;
+        }
+
+        a:hover::after {
+            background: rgba(255, 255, 255, 0.24);
+            opacity: 1;
+            width: 80%;
+            position: absolute;
+            content: '';
+            left: 4px;
+            bottom: 7px;
+            height: 1px;
+            width: 0;
+            padding: 0;
+            z-index: -1;
+            background: rgb(61, 190, 223);
+            transition: all .5s ease;
+            opacity: 1;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+<div style='position:relative; top:-100px; left:80px;'>
+<img src="capa.jpg" width="1175">
+</div>
+    <div style='position:absolute; top:15px; left:150px;' class="col-9">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <img src="Perfil.png" width="250" alt="Imagem responsiva">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                </br></br>
+                    <h1>Fábio Lucas do Amaral Rodrigues</h1>
+                    <h4>Front-End - HTML | CSS | JavaScript</h4>
+                    <h7>I am 24 years old and my birthday is March 20, 1998</h7>
+                    <br></br>
+                    <div class="alert alert-info" role="alert">
+                        I am committed to what I am assigned to do, objective and punctual. I have several interests related to data management, web design and web development.
+                    </div>
+                        <main>
+                    <nav class="menu_geral">
+                        <ul>
+                            <li>
+                                <br>
+                                    <a href="#"home></a><button type="button" class="bg btn-dark"><a href="https://www.linkedin.com/in/fábiolucasdoamaralrodrigues" target="_blank" rel="noopener noreferrer">Linkedin</button></a>
+                                    <a href="#"home></a><button type="button" class="bg btn-dark"><a href="https://api.whatsapp.com/send?phone=556798022003" target="_blank" rel="noopener noreferrer">WhatsApp</button></a>
+                                    <a href="#"home></a><button type="button" class="bg btn-dark"><a href="https://www.instagram.com/thefabio_lucas" target="_blank" rel="noopener noreferrer">Instagram</button></a>
+                                    <a href="#"home></a><button type="button" class="bg btn-dark"><a href="https://github.com/TheFabioLucas" target="_blank" rel="noopener noreferrer">GitHub</button></a> 
+                                    <br><br><br>
+                                </div>
+                        </ul>
+                    </nav>
+                </main> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2>Hard Skill <span class="badge bg-secondary">★</span></h2>
+                <p font-family>Portuguese <br>
+                   English <br>
+                   Spanish </br>
+                </p>
+                <h2>Soft Skill <span class="badge bg-secondary">★</span></h2>
+                <p>Good Communication <br>
+                    Proactivity <br>
+                    Time management <br>
+                    Marketing Online </br>
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2>Education <span class="badge bg-secondary">★</span></h2></h2>
+                <p> UniDomBosco <br>
+                    2021 - Expected completion 2023<br>
+                    Studying Systems Analysis and
+                    Development </br></p>
+                <h2>Courses <span class="badge bg-secondary">★</span></h2></h2>
+                <p style="text-align:justify;"> Customer service - Grupo VitóriaHumana
+                    with an 8-hour load. <br><br>
+                    Market Analysis - Conducted by SEBRAE with
+                    a 6-hour workload.<br><br>
+                    Leader Coach - High performance
+                    leadership - Carried out by SEBRAE with a
+                    <br>16-hour workload. <br><br>
+                    Project Management Fundamentals -
+                    Google Certified <br><br>
+                    Program Yourself: Introduction to
+                    Programming - The University Edinburgh <br><br>
+                    Certificate of Programming Logic I and II -
+                    Certified by Alura<br></br>
+                </p>
+            </div>
+        </div>
+    </br></br>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
